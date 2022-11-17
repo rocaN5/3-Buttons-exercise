@@ -10,9 +10,8 @@ let sadYellow = false;
 let sadBlue = false;
 let j = 0;
 
-
+// Обработчик событий на красную кнопку
 redButton.addEventListener('click', () =>{
-
   let i = 100;
   let counter = setInterval(timer, timeValue);
 
@@ -33,6 +32,7 @@ redButton.addEventListener('click', () =>{
   };
 });
 
+// Обработчик событий на жёлтую кнопку
 yellowButton.addEventListener('click', () =>{
   let i = 100;
   let counter = setInterval(timer, timeValue);
@@ -54,6 +54,7 @@ yellowButton.addEventListener('click', () =>{
   };
 });
 
+// Обработчик событий на синюю кнопку
 blueButton.addEventListener('click', () =>{
   let i = 100;
   let counter = setInterval(timer, timeValue);
@@ -75,6 +76,7 @@ blueButton.addEventListener('click', () =>{
   };
 });
 
+// При нажатыъ трёх кнопках вылазит смайлик
 function allDisabled(){
   if(sadRed == true && sadYellow == true && sadBlue == true){
     let counterImg = setInterval(timerImg, timeValue);
@@ -92,7 +94,7 @@ function allDisabled(){
   };
 };
 
-
+// Кнопка рестарт
 resetButton.addEventListener('click', () =>{
   redButton.style.display = 'block';
   yellowButton.style.display = 'block';
@@ -107,5 +109,3 @@ resetButton.addEventListener('click', () =>{
   sadYellow = false;
   sadBlue = false;
 });
-
-

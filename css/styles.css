@@ -7,6 +7,7 @@
   src: url("../fonts/Roboto-regular.ttf") format("truetype");
 }
 /* ••• Fonts End ••• */
+/* ••• Buttons ••• */
 .container {
   position: relative;
   width: 50%;
@@ -104,6 +105,8 @@
   background-color: #c3c3c3;
 }
 
+/* ••• Buttons END ••• */
+/* ••• Default styles ••• */
 * {
   margin: 0;
   padding: 0;
@@ -124,4 +127,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* ••• Default styles END ••• *//*# sourceMappingURL=styles.css.map */
