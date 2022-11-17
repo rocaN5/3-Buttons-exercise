@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* ••• Fonts ••• */
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-regular.ttf") format("truetype");
+}
+/* ••• Fonts End ••• */
+.container {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container button {
+  padding: 60px;
+  border-radius: 50%;
+  border: 2px solid #30363d;
+  cursor: pointer;
+  transition: 300ms;
+  -webkit-box-shadow: 2px 5px 16px 0px #000;
+  box-shadow: 2px 5px 16px 0px #000;
+  outline: none;
+}
+.container button:hover {
+  transition: 300ms;
+  transform: translateY(-2px);
+}
+.container button:active {
+  transition: 300ms;
+  transform: scale(0.9);
+}
+.container button#red {
+  background-color: #f62b2b;
+}
+.container button#yellow {
+  background-color: #ffde25;
+}
+.container button#blue {
+  background-color: #2256ab;
+}
+
+.reset {
+  height: 20%;
+}
+.reset button {
+  color: #000;
+  width: unset;
+  height: unset;
+  border-radius: 10px;
+  padding: 10px 20px;
+  -webkit-box-shadow: 2px 5px 16px 0px #000;
+  box-shadow: 2px 5px 16px 0px #000;
+  outline: none;
+}
+.reset button:hover {
+  transition: 300ms;
+  transform: translateY(2px);
+}
+.reset button:active {
+  transition: 300ms;
+  transform: translateY(4px);
+  background-color: #c3c3c3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}/*# sourceMappingURL=styles.css.map */
