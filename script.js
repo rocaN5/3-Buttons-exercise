@@ -91,6 +91,13 @@ function allDisabled(){
           clearInterval(counterImg);
       };
     };
+  }else if(sadRed == false && sadYellow == false && sadBlue == false){
+    sadRed = false;
+    sadYellow = false;
+    sadBlue = false;
+    j = 0;
+    img.style.display = 'none';
+    img.style.opacity = '0';
   };
 };
 
@@ -102,10 +109,10 @@ resetButton.addEventListener('click', () =>{
   redButton.style.opacity = '1';
   yellowButton.style.opacity = '1';
   blueButton.style.opacity = '1';
-  img.style.display = 'none';
-  img.style.opacity = '0';
-  j = 0;
   sadRed = false;
   sadYellow = false;
   sadBlue = false;
+  j = 0;
+  img.style.display = 'none';
+  img.style.opacity = '0';
 });
