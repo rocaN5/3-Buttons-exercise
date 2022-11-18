@@ -22,6 +22,17 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 900px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .container {
+    flex-flow: column;
+    height: 80%;
+  }
+}
 @media screen and (max-width: 480px) and (max-height: 770px) {
   .container {
     height: 80%;
@@ -33,7 +44,13 @@
     height: 100%;
   }
 }
-.container button {
+.container .holder {
+  position: relative;
+  display: block;
+  width: 124px;
+  height: 124px;
+}
+.container .holder button {
   padding: 60px;
   border-radius: 50%;
   border: 2px solid #30363d;
@@ -44,17 +61,19 @@
   outline: none;
   opacity: 1;
 }
-.container button:hover {
+.container .holder button:hover {
   transition: 300ms;
-  transform: translateY(-2px);
+  transform: translateY(-6px);
+  -webkit-box-shadow: 2px 12px 16px 0px #000;
+  box-shadow: 2px 12px 16px 0px #000;
 }
-.container button#red {
+.container .holder button#red {
   background-color: #f62b2b;
 }
-.container button#yellow {
+.container .holder button#yellow {
   background-color: #ffde25;
 }
-.container button#blue {
+.container .holder button#blue {
   background-color: #2256ab;
 }
 .container img {
@@ -62,12 +81,13 @@
   width: 9rem;
   display: none;
   opacity: 0;
+  color: #fff;
 }
 
 .reset {
   height: 20%;
 }
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 700px) and (max-width: 630px) {
   .reset {
     height: 20%;
     position: fixed;
@@ -76,7 +96,7 @@
     width: 20%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 300px) {
   .reset {
     height: 20%;
     position: fixed;
@@ -89,6 +109,7 @@
   color: #000;
   width: unset;
   height: unset;
+  cursor: pointer;
   border-radius: 10px;
   padding: 10px 20px;
   -webkit-box-shadow: 2px 5px 16px 0px #000;
